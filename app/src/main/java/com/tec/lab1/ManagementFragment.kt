@@ -1,24 +1,26 @@
 package com.tec.lab1
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TableLayout
 import android.widget.TableRow
 import android.widget.TextView
+import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
-import com.tec.lab1.databinding.FragmentSecondBinding
+import androidx.navigation.fragment.navArgs
+import com.tec.lab1.databinding.FragmentManagementBinding
 import com.tec.lab1.services.IMaintenanceService
 import com.tec.lab1.services.ServiceLocator
 
 /**
  * A simple [Fragment] subclass as the second destination in the navigation.
  */
-class SecondFragment : Fragment() {
+class ManagementFragment : Fragment() {
 
-    private var _binding: FragmentSecondBinding? = null
+    private var _binding: FragmentManagementBinding? = null
     private lateinit var service: IMaintenanceService
     private lateinit var columns: Array<String>
     private lateinit var data: Array<Array<String>>
@@ -31,9 +33,9 @@ class SecondFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
 
-        _binding = FragmentSecondBinding.inflate(inflater, container, false)
+        _binding = FragmentManagementBinding.inflate(inflater, container, false)
         return binding.root
 
     }

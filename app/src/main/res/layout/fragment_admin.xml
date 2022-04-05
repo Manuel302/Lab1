@@ -4,36 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="20dp"
     android:orientation="vertical"
-    tools:context=".FirstFragment">
+    tools:context=".AdminFragment">
 
     <Button
         android:id="@+id/curses_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/next" />
+        android:text="@string/curses_btn" />
 
     <Button
-        android:id="@+id/carrears_btn"
+        android:id="@+id/careers_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/next" />
+        android:text="@string/careers_btn" />
 
     <Button
-        android:id="@+id/profesors_btn"
+        android:id="@+id/professors_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/next" />
+        android:text="@string/professors_btn" />
 
     <Button
         android:id="@+id/students_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/next" />
+        android:text="@string/students_btn" />
 
     <Button
         android:id="@+id/cicles_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/next" />
+        android:text="@string/cicles_btn" />
 </LinearLayout>
